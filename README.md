@@ -1,2 +1,2 @@
 # bankproject
-Bank project using python,html,css,bootstrap5,javascript and Django framework
+Bank project using python,html,css,bootstrap5, and Django framework
