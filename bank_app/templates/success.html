@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <meta charset="UTF-8">
+    <title>success</title>
+    <style>
+        #im1{
+        margin-top:200px;
+        margin-left:150px;
+
+        }
+        #p1{
+        margin-left:70px;
+
+        }
+        #d1{
+        height:750px;
+        width:600px;
+        background-color:white;
+        margin-left:450px;
+
+        }
+    </style>
+</head>
+<body style="background-color:#74bec1;">
+<div id="d1">
+<img  id="im1" src="{% static 'success1.png' %}">
+<p id="p1"><b>{{am}}Rs</b> Successfully Added to your bank account<b>{{ac}}</b> </p>
+</div>
+
+
+
+
+</body>
+</html>

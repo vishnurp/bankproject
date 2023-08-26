@@ -1,0 +1,108 @@
+<!--<!DOCTYPE html>-->
+<!--{% load static %}-->
+<!--<html>-->
+<!--<head>-->
+<!--  <script src="https://kit.fontawesome.com/f7ca859c41.js" crossorigin="anonymous"></script>-->
+<!--  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">-->
+<!--  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>-->
+<!--  <meta charset="utf-8">-->
+<!--  <title>Form-v5 by Colorlib</title>-->
+<!--  &lt;!&ndash; Mobile Specific Metas &ndash;&gt;-->
+<!--  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">-->
+<!--  &lt;!&ndash; Font &ndash;&gt;-->
+<!--  <link rel="stylesheet" type="text/css" href="{% static 'css/roboto-font.css' %}">-->
+<!--  <link rel="stylesheet" type="text/css" href="{% static 'fonts/font-awesome-5/css/fontawesome-all.min.css' %}">-->
+<!--  &lt;!&ndash; Main Style Css &ndash;&gt;-->
+<!--  <link rel="stylesheet" href="{% static 'css/style.css' %}">-->
+<!--</head>-->
+<!--<body class="form-v5">-->
+<!--  &lt;!&ndash; Navigation Start &ndash;&gt;-->
+<!--  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: yellow; height: auto;">-->
+<!--    <div class="container-fluid">-->
+<!--      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">-->
+<!--        <span class="navbar-toggler-icon"></span>-->
+<!--      </button>-->
+<!--      <div class="collapse navbar-collapse" id="navbarSupportedContent">-->
+<!--        <ul class="navbar-nav me-auto mb-2 mb-lg-0">-->
+<!--          <li class="nav-item">-->
+<!--            <a class="nav-link active" aria-current="page" href="#" style="color: green;"><b><h5>Home</h5></b></a>-->
+<!--          </li>-->
+<!--          <li class="nav-item">-->
+<!--            <a class="nav-link active" aria-current="page" href="#" style="color: green;"><b><h5>About Us</h5></b></a>-->
+<!--          </li>-->
+<!--          <li class="nav-item dropdown">-->
+<!--            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: green;">-->
+<!--              <b><h5>Services</h5></b>-->
+<!--            </a>-->
+<!--            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">-->
+<!--              <li><a class="dropdown-item" href="#">Action</a></li>-->
+<!--              <li><a class="dropdown-item" href="#">Another action</a></li>-->
+<!--              <li><hr class="dropdown-divider"></li>-->
+<!--              <li><a class="dropdown-item" href="#">Something else here</a></li>-->
+<!--            </ul>-->
+<!--          </li>-->
+<!--          <li class="nav-item">-->
+<!--            <a class="nav-link " href="http://127.0.0.1:8000/bank_app/adminlog/" tabindex="-1" aria-disabled="true" style="color: green;">-->
+<!--              <b><h5>Admin Login</h5></b>-->
+<!--            </a>-->
+<!--          </li>-->
+<!--          <li class="nav-item">-->
+<!--            <a class="nav-link active" aria-current="page" href="#" style="color: green;"><b><h5>Contact</h5></b></a>-->
+<!--          </li>-->
+<!--          <li class="nav-item">-->
+<!--            <a class="nav-link active" aria-current="page" href="http://127.0.0.1:8000/bank_app/login/">-->
+<!--              <b><h5 style="color: green;"><i class="fa-solid fa-user"></i>Login</h5></b>-->
+<!--            </a>-->
+<!--          </li>-->
+<!--        </ul>-->
+<!--        <center><div><marquee><h1 style="color: green;"><b>YOUR BANK</b></h1></marquee></div></center>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </nav>-->
+<!--  &lt;!&ndash; Navigation End &ndash;&gt;-->
+
+<!--  <div class="page-content">-->
+<!--    <div class="form-v5-content" style="margin-top: 0px;">-->
+<!--      <form class="form-detail" method="post" enctype="multipart/form-data">-->
+<!--        {% csrf_token %}-->
+<!--        <h2>Register Account Form</h2>-->
+<!--        <div class="form-row">-->
+<!--          <label>First Name</label>-->
+<!--          <input type="text" name="fname" placeholder="First Name" required>-->
+<!--        </div>-->
+<!--        <div class="form-row">-->
+<!--          <label>Last Name</label>-->
+<!--          <input type="text" name="lname" placeholder="Last Name" required>-->
+<!--        </div>-->
+<!--        <div class="form-row">-->
+<!--          <label>User Name</label>-->
+<!--          <input type="text" name="uname" placeholder="User Name" required>-->
+<!--        </div>-->
+<!--        <div class="form-row">-->
+<!--          <label>Email ID</label>-->
+<!--          <input type="email" name="email" placeholder="Your Email" required>-->
+<!--        </div>-->
+<!--        <div class="form-row">-->
+<!--          <label>Phone number</label>-->
+<!--          <input type="number" name="phone" placeholder="Your Phone number" required>-->
+<!--        </div>-->
+<!--        <div class="form-row">-->
+<!--          <label>Image</label>-->
+<!--          <input type="file" name="image" placeholder="Your image" required>-->
+<!--        </div>-->
+<!--        <div class="form-row">-->
+<!--          <label>Pin Number</label>-->
+<!--          <input type="number" name="pin" placeholder="Your 4 Digit pin" required>-->
+<!--        </div>-->
+<!--        <div class="form-row">-->
+<!--          <label>Re-Enter Pin</label>-->
+<!--          <input type="number" name="repin" placeholder="Re-Enter 4 Digit pin" required>-->
+<!--        </div>-->
+<!--        <div class="form-row-last">-->
+<!--          <input type="submit" class="register" value="Register">-->
+<!--        </div>-->
+<!--      </form>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</body>-->
+<!--</html>-->

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <title>balance</title>
+  <style>
+    #d1{
+    height:750px;
+    width:600px;
+    background-color:lightblue;
+    margin-left:450px;
+    border:4px solid white;
+
+    }
+    #d2{
+    background-color:green;
+    height:50px;
+    width:592px;
+
+    }
+    #in1{
+    margin-top:250px;
+    margin-left:100px;
+    width:400px;
+    height:50px;
+
+    }
+    #in2{
+    margin-left:210px;
+    margin-top:30px;
+
+    }
+  </style>
+</head>
+<body style="background-color:#74bec1;">
+<div id="d1">
+<form method="post">{% csrf_token %}
+  <div id="d2">
+    <h3 style="margin-left:50px; color:white;"><b>CHECK YOUR ACCOUNT BALANCE</b></h3>
+  </div>
+  <table>
+    <tr>
+      <th></th>
+      <td><input id="in1" type="number" name="pin" placeholder="Enter 4 digit pin"></td>
+    </tr>
+    <tr>
+      <th></th>
+      <td><input id="in2" class="btn btn-success" type="submit" value="Check Balance"></td>
+    </tr>
+  </table>
+
+</form>
+</div>
+
+</body>
+</html>
